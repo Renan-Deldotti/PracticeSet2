@@ -7,43 +7,46 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/threePointsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="+ 3 Points"
+        android:onClick="addPoint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/team_a_score" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/twoPointsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:onClick="addPoint"
         android:text="+ 2 Points"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button18" />
+        app:layout_constraintTop_toBottomOf="@+id/threePointsButton" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/freeThrowButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="addPoint"
         android:layout_margin="8dp"
         android:text="Free Throw"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
+        app:layout_constraintTop_toBottomOf="@+id/twoPointsButton" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintTop_toBottomOf="@+id/teamAName" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/teamAName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
