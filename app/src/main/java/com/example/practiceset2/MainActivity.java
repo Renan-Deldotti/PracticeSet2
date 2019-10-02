@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void addPoint(View view) {
         // Receive a view and find which one of the buttons that sent the action
         char team = 'a';
