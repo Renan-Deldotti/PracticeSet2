@@ -8,49 +8,118 @@
 
     <Button
         android:id="@+id/threePointsButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="+ 3 Points"
         android:onClick="addPoint"
+        android:text="+ 3 Points"
+        app:layout_constraintEnd_toStartOf="@id/threePointsButtonB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team_a_score" />
 
     <Button
+        android:id="@+id/threePointsButtonB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="addPoint"
+        android:text="+ 3 Points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/threePointsButton"
+        app:layout_constraintTop_toBottomOf="@+id/team_b_score" />
+
+    <Button
         android:id="@+id/twoPointsButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:onClick="addPoint"
         android:text="+ 2 Points"
+        app:layout_constraintEnd_toStartOf="@id/twoPointsButtonB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/threePointsButton" />
 
     <Button
-        android:id="@+id/freeThrowButton"
-        android:layout_width="match_parent"
+        android:id="@+id/twoPointsButtonB"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="addPoint"
         android:layout_margin="8dp"
+        android:onClick="addPoint"
+        android:text="+ 2 Points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/twoPointsButton"
+        app:layout_constraintTop_toBottomOf="@+id/threePointsButtonB" />
+
+    <Button
+        android:id="@+id/freeThrowButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="addPoint"
         android:text="Free Throw"
+        app:layout_constraintEnd_toStartOf="@id/freeThrowButtonB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/twoPointsButton" />
 
+    <Button
+        android:id="@+id/freeThrowButtonB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="addPoint"
+        android:text="Free Throw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/freeThrowButton"
+        app:layout_constraintTop_toBottomOf="@+id/twoPointsButtonB" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="resetPoints"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/team_a_score"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/team_b_score"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teamAName" />
 
     <TextView
+        android:id="@+id/team_b_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/team_a_score"
+        app:layout_constraintTop_toBottomOf="@+id/teamAName" />
+
+    <TextView
         android:id="@+id/teamAName"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Team A"
+        app:layout_constraintEnd_toStartOf="@id/teamBName"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamBName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Team B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/teamAName"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
