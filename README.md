@@ -1,2 +1,2 @@
 # PracticeSet2
-App made from the Udacity's Android tutorial.
+<p>App created from Udacity's Android tutorial.</p>
